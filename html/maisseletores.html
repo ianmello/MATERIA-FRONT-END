@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mais seletores</title>
+
+        <style>
+            /* todo p descendente de article, ou seja, qualquer p dentro do article*/
+            article p{
+                padding: 12px;
+                background-color: lightgray;
+            }
+            /* todo  p filho direto do article, ou seja, o/os p que vem diretamente seguido do article
+            antes de qualquer elemento do article*/
+            article > p{
+                border: 1px solid black;
+            }
+
+            #principal p.promocao{
+                padding: 12px;
+                background-color: aliceblue;
+            }
+
+            .coordenadores{
+                text-align: center;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="principal">
+            <h1 id="titulo">
+                Portal de cursos
+            </h1>
+
+            <p id="descricao">Possuimos cursos nas mais diversas áreas</p>
+
+            <p class = "promocao nova">Venha conversar conosco e conhecer nossas ofertas de bolsas de estudos</p>
+        
+            <p>Cursos:</p>
+            <!-- article>p.*3 -->
+            <article>
+                <p class="novo-cursp">Ciencias da Computacao</p>
+                <p class="curso">Engenharia de Computacao</p>
+                <p class="curso">Farmácia</p>
+
+                <section>
+                    <p class="coordenadores">Saiba que nossos coordenadores estão à sua disposição </p>
+                </section>
+            </article>
+
+            <!-- p#.final-pagina*2 -->
+            <p id="contato" class="final-pagina">Entre em contato: 40028922</p>
+            <p id="rodape" class="final-pagina">&copy; Todos os direitos estão reservados</p>
+        </main>
+        
+    </body>
+    </html>
