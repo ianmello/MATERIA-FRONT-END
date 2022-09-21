@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Display</title>
+    <style>
+        p{
+            background-color: lightblue;
+        }
+        a{
+            background-color: antiquewhite;
+        }
+        footer{
+            background-color:lightgray;
+        }
+        button{
+            background-color:lightseagreen;
+        }
+
+        .professores{
+            display: block;
+            width: 200px;
+            height:200px;
+        }
+
+        .Engenharia{
+            display:inline-block;
+            width:200px;
+            height:200px;
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <!-- article#cursos>p.*2+a.*2[href=#]*2+footer.rodape+button.botao -->
+    <article id="cursos">
+
+        <!-- Display p sempre BLOCK -->
+        <p class="Engenharia">Engenharia</p>
+        <p class="Farmacia">Farmacia</p>
+        <!-- Display a sempre INLINE -->
+        <a href="#" class="professores">Veja a lista de professores</a>
+        <a href="#" class="contato">Entre em contato</a>
+        <!-- Display footer sempre BLOCK -->
+        <footer class="rodape">Portal de Cursos</footer>
+        <!-- Display button sempre INLINE-BLOCK -->
+        <button class="botao">Clique aqui para falar conosco</button>
+        <p>Todos os direitos reservados</p>
+    </article>
+</body>
+</html>
